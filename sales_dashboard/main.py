@@ -12,7 +12,7 @@ st.title("📊 Superstore Sales Dashboard")
 # LOAD DATA
 # ---------------------------------------------------
 df = pd.read_csv(
-    "C://Users//muhammad.ahmed//Downloads//archive//sales_dashboard//Sample_ Superstore.csv"
+    "Sample_ Superstore.csv"
 )
 
 df['Order Date'] = pd.to_datetime(df['Order Date'])
@@ -153,3 +153,4 @@ fig4 = px.scatter(
 )
 
 st.plotly_chart(fig4, use_container_width=True)
+
